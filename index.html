@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Nilai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Aplikasi Nilai</h1>
+    <div class="form-container">
+        <div class="form-group">
+            <label for="nim">NIM</label>
+            <input type="text" id="nim">
+        </div>
+        <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama">
+        </div>
+        <div class="form-row">
+            <div class="form-group blue-box">
+                <h3>Nilai Teori</h3>
+                <div class="form-group">
+                    <label for="presensi-teori">Presensi</label>
+                    <input type="number" id="presensi-teori">
+                </div>
+                <div class="form-group">
+                    <label for="tugas-teori">Tugas</label>
+                    <input type="number" id="tugas-teori">
+                </div>
+                <div class="form-group">
+                    <label for="uts-teori">UTS</label>
+                    <input type="number" id="uts-teori">
+                </div>
+                <div class="form-group">
+                    <label for="uas-teori">UAS</label>
+                    <input type="number" id="uas-teori">
+                </div>
+            </div>
+            <div class="form-group pink-box">
+                <h3>Nilai Praktek</h3>
+                <div class="form-group">
+                    <label for="presensi-praktek">Presensi</label>
+                    <input type="number" id="presensi-praktek">
+                </div>
+                <div class="form-group">
+                    <label for="tugas-praktek">Tugas</label>
+                    <input type="number" id="tugas-praktek">
+                </div>
+                <div class="form-group">
+                    <label for="uts-praktek">UTS</label>
+                    <input type="number" id="uts-praktek">
+                </div>
+                <div class="form-group">
+                    <label for="uas-praktek">UAS</label>
+                    <input type="number" id="uas-praktek">
+                </div>
+            </div>
+        </div>
+        <button onclick="simpanNilai()">Simpan</button>
+        <button onclick="batalForm()">Batal</button>
+    </div>
+    <hr>
+    <table id="nilaiTable">
+        <h3>Rincian Nilai</h3>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Presensi</th>
+                <th>Tugas</th>
+                <th>UTS</th>
+                <th>UAS</th>
+                <th>Nilai Akhir</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id="resetForm">
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <button id="reset">Reset</button>
+    
+    <script src="main.js"></script>
+</body>
+</html>
